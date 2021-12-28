@@ -1,0 +1,9 @@
+name: {{ cookicutter.project_slug }}
+
+dependencies:
+  - cookiecutter
+
+  - pip:
+  {% if cookiecutter.project_packages == "All" -%}
+  - numpy
+  {% endif -%}
